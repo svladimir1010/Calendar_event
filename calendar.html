@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calendar_events</title>
+	<link rel="stylesheet" href="date_input.css" type="text/css">
+	<link rel="stylesheet" href="calendar.css" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.date_input.js"></script>
+	<script type="text/javascript">$($.date_input.initialize)</script>
+</head>
+<style>
+	* {
+		-moz-user-data: none;
+		-o-user-data: none;
+		-khtml-user-data: none;
+		-webkit-user-data: none;
+		-ms-user-data: none;
+		user-data: none;
+	}
+
+	.bt {
+		background: rgba(0, 0, 0, 0);
+		color: #263332;
+		border: none;
+		outline: none;
+		font-size: 120%;
+		font-weight: bold;
+		position: relative;
+		transition: .3s;
+	}
+
+	.pre {
+		right: 4vw;
+	}
+
+	.pre:hover {
+		color: red;
+		right: 4.3vw;
+	}
+
+	.nex {
+		left: 4vw;
+	}
+
+	.nex:hover {
+		color: red;
+		left: 4.3vw;
+	}
+
+	.active {
+		background-color: #B0B0F7;
+	}
+
+	.actived {
+		background-color: #63638B;
+	}
+</style>
+
+<body>
+
+	<script type="text/javascript" src="calendar.js"></script>
+	<form action="#" id="searchForm">
+		<h5>Выбор по дате</h5>
+		<p>
+			<input type="text" name="date" id="inp" class="date_input">
+		</p>
+	</form>
+
+	<div class="wrapper-popup">
+		<div class="popup">
+			<h4>Список Заметок</h4>
+			<label for="addTask">Новая:</label>
+			<br>
+			<input type="text" id='addTask'>
+			<button id='add' title="Записать">+</button>
+			<p>
+				<label for="note">Добавить описание:</label>
+				<textarea id='note' name="comment" placeholder='Пожалуйста не более 100 символов!'></textarea>
+			</p>
+			<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui officia id delectus numquam consequatur officiis harum quaerat non dicta voluptate laborum eum ut amet, assumenda accusantium, dolor voluptates perferendis fugit! -->
+			<ul class="list"></ul>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>
